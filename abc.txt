@@ -1,0 +1,3 @@
+echo "deb http://mirrors.ustc.edu.cn/debian testing main contrib non-free-firmware non-free" | sudo tee /etc/apt/sources.list.d/debian-testing.list
+sudo apt update && sudo apt full-upgrade -y
+sudo aptitude install -o Dpkg::Options::="--force-overwrite" install linux-image-amd64 linux-headers-amd64
